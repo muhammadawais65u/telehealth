@@ -1,4 +1,4 @@
-export { Button } from "./Button";
-export { Card, CardIcon, CardTitle, CardDescription } from "./Card";
-export { SectionTitle } from "./SectionTitle";
-export { Container } from "./Container";
+export { Button } from "./Button.jsx";
+export { Card, CardIcon, CardTitle, CardDescription } from "./Card.jsx";
+export { SectionTitle } from "./SectionTitle.jsx";
+export { Container } from "./Container.jsx";

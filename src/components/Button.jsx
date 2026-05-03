@@ -11,7 +11,7 @@ export function Button({
   ...props
 }) {
   const baseClasses =
-    "inline-flex items-center justify-center gap-1.5 font-medium transition-all duration-200 rounded-lg";
+    "inline-flex items-center justify-center gap-1.5 font-medium transition-all duration-200 rounded-lg font-['Plus_Jakarta_Sans']";
 
   const variants = {
     primary:

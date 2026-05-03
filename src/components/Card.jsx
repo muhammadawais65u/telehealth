@@ -20,6 +20,7 @@ export function Card({
     accent: "bg-gradient-to-br from-[#635bff] to-[#4f46e5]",
     light: "bg-gradient-to-br from-[#f0f7ff] to-[#e8f4f8] border border-[#d4e5f7]/60",
     warm: "bg-gradient-to-br from-[#fef3f2] to-[#fef7f0] border border-[#fecaca]/40",
+    round: "bg-white border border-gray-200 shadow-lg",
   };
 
   const hoverClasses = hover
