@@ -34,7 +34,7 @@ export function ChronicCareGap() {
               <div>
                 <div>
                   <h3  className="flex items-baseline gap-2 mb-2">
-                  <span className="font-semibold text-blue-600 text-4xl">133M</span>Americans</h3>
+                  <span className="font-semibold heading-black text-4xl">133M</span>Americans</h3>
                 </div>
               </div>
             </div>
