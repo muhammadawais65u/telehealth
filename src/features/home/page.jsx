@@ -10,6 +10,7 @@ import { GbetaAccelerator } from "./sections/GbetaAccelerator";
 import { Gener8torPartnership } from "./sections/Gener8torPartnership";
 import { CloseTheGap } from "./sections/CloseTheGap";
 import { PartnersSection } from "./sections/PartnersSection";
+import { ProgramsSection } from "./sections/ProgramsSection";
 
 export default function HomePage() {
   return (
@@ -19,6 +20,7 @@ export default function HomePage() {
         <PartnersSection />
         <ChronicCareGap />
         <HealthShield />
+        <ProgramsSection />
         <BusinessModel />
         <MarketData />
         <HowItWorks />
