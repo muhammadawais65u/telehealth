@@ -4,6 +4,7 @@ import Image from "next/image";
 import { Button } from "../../../components/Button";
 import { Container } from "../../../components/Container";
 import { HeroTitle } from "../../../components/HeroTitle";
+import heroImage from "../../../../public/assets/images/hero-asset.png";
 
 export function HeroSection() {
   return (
@@ -12,6 +13,7 @@ export function HeroSection() {
         <div className="grid lg:grid-cols-2 gap-10 lg:gap-12 items-center">
           {/* Left content */}
           <div>
+                
             <HeroTitle />
 
             {/* CTA Button */}
@@ -36,10 +38,9 @@ export function HeroSection() {
           <div className="relative hidden lg:block">
             <div className="relative bg-gradient-to-br from-blue-50 to-indigo-100 rounded-2xl p-8 border border-blue-100 flex items-center justify-center">
               <Image
-                src="/hero-asset.avif"
+               src={heroImage}
                 alt="Tele Health Platform"
-                width={400}
-                height={350}
+                
                 className="w-full max-w-[400px] h-auto rounded-xl object-cover"
                 priority
               />
