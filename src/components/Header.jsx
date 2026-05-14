@@ -34,7 +34,7 @@ const navItems = [
     ],
   },
   { label: "Contact Us", href: "/contact" },
-  { label: "FAQ", href: "/faq" },
+  { label: "FAQ", href: "/faqs" },
   { label: "Press Kit", href: "/press-kit" },
 ];
 
