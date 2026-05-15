@@ -49,13 +49,7 @@ export function Header() {
           {/* Logo */}
           <div className="flex-shrink-0">
             <Link href="/" className="flex items-center gap-3 group">
-              <div className="w-10 h-10 bg-gradient-to-br from-blue-600 to-blue-700 rounded-lg flex items-center justify-center shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105">
-                <span className="text-white font-bold text-lg font-sans">CC</span>
-              </div>
-              <div>
-                <span className="text-xl font-bold text-gray-900 group-hover:text-blue-600 transition-colors duration-300 font-sans">CCN Health</span>
-                <p className="text-xs text-gray-500 hidden sm:block font-sans">Telehealth Solutions</p>
-              </div>
+              <img src="/assets/images/logo.jpeg" alt="CCN Health Logo" className="w-25 h-12 object-contain group-hover:scale-105 transition-all duration-300" />
             </Link>
           </div>
 
