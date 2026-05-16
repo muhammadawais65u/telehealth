@@ -60,7 +60,7 @@ const announcements = [
 
 export default function NewsUpdatesSection() {
   return (
-    <section className="relative bg-slate-100 overflow-hidden">
+    <section id="announcements" className="relative bg-gray-50 py-16 md:py-24 overflow-hidden">
       <div className="relative py-16 md:py-24">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center gap-3 mb-3">

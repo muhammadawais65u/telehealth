@@ -12,7 +12,7 @@ const navItems = [
     href: "/services",
     hasDropdown: true,
     dropdownItems: [
-      { name: "Remote Patient Monitoring", desc: "Real-time vital sign monitoring", icon: "monitor", color: "blue" },
+      { name: "Remote Patient Monitoring", desc: "Real-time vital sign monitoring", icon: "monitor", color: "blue", href: "/service/rpm" },
       { name: "Chronic Care Management", desc: "Care coordination for chronic conditions", icon: "heart", color: "orange" },
       { name: "Remote Therapeutic Monitoring", desc: "Musculoskeletal & respiratory monitoring", icon: "bone", color: "green" },
       { name: "Principal Care Management", desc: "Single high-risk condition management", icon: "activity", color: "purple" },
@@ -27,10 +27,10 @@ const navItems = [
     href: "/articles",
     hasDropdown: true,
     dropdownItems: [
-      { name: "Latest Articles", desc: "Most recent healthcare insights", icon: "article", color: "blue" },
-      { name: "Patient Success Stories", desc: "Real patient experiences", icon: "story", color: "green" },
-      { name: "Healthcare Tips", desc: "Expert health advice", icon: "tips", color: "orange" },
-      { name: "Technology Updates", desc: "Latest in telehealth tech", icon: "tech", color: "purple" },
+      { name: "Latest Articles", desc: "Most recent healthcare insights", icon: "article", color: "blue", href: "/articles" },
+      { name: "Patient Success Stories", desc: "Real patient experiences", icon: "story", color: "green", href: "/articles/success-stories" },
+      { name: "Healthcare Tips", desc: "Expert health advice", icon: "tips", color: "orange", href: "/articles/tips" },
+      { name: "Technology Updates", desc: "Latest in telehealth tech", icon: "tech", color: "purple", href: "/articles/tech" },
     ],
   },
   { label: "Contact Us", href: "/contact" },
@@ -49,7 +49,7 @@ export function Header() {
           {/* Logo */}
           <div className="flex-shrink-0">
             <Link href="/" className="flex items-center gap-3 group">
-              <img src="/assets/images/logo.jpeg" alt="CCN Health Logo" className="w-25 h-12 object-contain group-hover:scale-105 transition-all duration-300" />
+              <img src="/assets/images/logo.jpeg" alt="CCN Health Logo" className="w-[170px] h-12 object-contain group-hover:scale-105 transition-all duration-300" />
             </Link>
           </div>
 
@@ -99,7 +99,7 @@ export function Header() {
                           {item.dropdownItems.map((dropItem) => (
                             <Link
                               key={dropItem.name}
-                              href="#"
+                              href={dropItem.href || "#"}
                               className="group flex items-start gap-4 rounded-xl px-4 py-3.5 transition-all duration-300 hover:bg-gradient-to-r hover:from-blue-50 hover:to-indigo-50 hover:shadow-md"
                             >
                               <div className={`mt-0.5 flex h-10 w-10 shrink-0 items-center justify-center rounded-xl transition-all duration-300 group-hover:scale-110 group-hover:shadow-lg bg-gradient-to-br from-${dropItem.color}-50 to-${dropItem.color}-100 border border-${dropItem.color}-200`}>
@@ -126,10 +126,10 @@ export function Header() {
 
           {/* Right side actions */}
           <div className="hidden lg:flex lg:items-center lg:gap-4 flex-shrink-0">
-            <Button href="https://app.ccnhealth.com" variant="ghost" size="sm" className="text-gray-700 hover:text-blue-600 hover:bg-transparent transition-all duration-300 font-sans px-4 py-2">
+            <Button href="/login" variant="ghost" size="sm" className="text-gray-700 hover:text-[#0e4060] hover:bg-transparent transition-all duration-300 font-sans px-4 py-2">
               Log In
             </Button>
-            <Button variant="primary" size="sm" className="bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 shadow-lg hover:shadow-xl transition-all duration-300 font-sans">
+            <Button href="/sign-up" variant="primary" size="sm" className="bg-[#0e4060] hover:bg-[#0a2e45] shadow-lg hover:shadow-xl transition-all duration-300 font-sans">
               Get Started
             </Button>
           </div>
@@ -169,10 +169,10 @@ export function Header() {
               ))}
             </div>
             <div className="mt-6 pt-6 border-t border-gray-200/60 space-y-3">
-              <Button href="https://app.ccnhealth.com" variant="ghost" className="w-full justify-center text-gray-700 hover:text-blue-600 hover:bg-transparent transition-all duration-300 font-sans">
+              <Button href="/login" variant="ghost" className="w-full justify-center text-gray-700 hover:text-blue-600 hover:bg-transparent transition-all duration-300 font-sans">
                 Log In
               </Button>
-              <Button variant="primary" className="w-full justify-center bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 shadow-lg hover:shadow-xl transition-all duration-300 font-sans">
+              <Button href="/sign-up" variant="primary" className="w-full justify-center bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 shadow-lg hover:shadow-xl transition-all duration-300 font-sans">
                 Get Started
               </Button>
             </div>

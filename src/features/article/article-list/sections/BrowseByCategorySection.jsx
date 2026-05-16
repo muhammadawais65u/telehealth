@@ -213,7 +213,7 @@ const colorMap = {
 
 export default function BrowseByCategorySection() {
   return (
-    <section className="relative bg-orange-50 overflow-hidden">
+    <section id="categories" className="relative bg-white py-16 md:py-24 overflow-hidden">
       <div className="relative py-16 md:py-24">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center gap-3 mb-3">

@@ -60,7 +60,7 @@ const blogArticles = [
 
 export default function LatestArticlesSection() {
   return (
-    <section className="relative bg-gray-50 overflow-hidden">
+    <section id="latest" className="relative bg-white py-16 md:py-24 overflow-hidden">
       <div className="relative py-16 md:py-24">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center gap-3 mb-3">

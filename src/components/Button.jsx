@@ -11,16 +11,16 @@ export function Button({
   ...props
 }) {
   const baseClasses =
-    "inline-flex items-center justify-center gap-1.5 font-medium transition-all duration-200 rounded-lg font-['Plus_Jakarta_Sans']";
+    "inline-flex items-center justify-center gap-1.5 font-medium transition-all duration-200 rounded-lg";
 
   const variants = {
     primary:
-      "bg-[#256eff] text-white hover:bg-[#1a5cd4] shadow-sm hover:shadow-md",
+      "bg-[#0e4060] text-white hover:bg-[#0a2e45] shadow-sm hover:shadow-md",
     secondary:
       "bg-white text-[#0a2540] border border-gray-200 hover:bg-gray-50 hover:border-gray-300",
     ghost: "text-[#425466] hover:text-[#0a2540] hover:bg-[#f6f9fc]",
     outline:
-      "border-2 border-[#256eff] text-[#256eff] hover:bg-[#256eff] hover:text-white",
+      "border-2 border-[#0e4060] text-[#0e4060] hover:bg-[#0e4060] hover:text-white",
     onDark:
       "bg-white text-[#0a2540] hover:bg-gray-100 shadow-lg",
   };
